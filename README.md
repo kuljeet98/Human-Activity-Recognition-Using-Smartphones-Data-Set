@@ -52,7 +52,7 @@ X_tsne = train.drop(['subject', 'Activites','Activity_name'], axis=1)
 y_tsne = train['Activity_name']
 tsne(X_data = X_tsne,y_data=y_tsne, perplexities =[5,10,20,50])
 ```
-![tnse](tnse.png)
+![tnse](tsne.png)
 #### Accuracy
 In case of the classical Machine Learning Algortihms the Linear SVM Acuracy on test set was at the top most.
 ```
