@@ -34,12 +34,13 @@ from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, TensorBoard
 ```
 #### Plotting data
 ```
-sns.set_style('whitegrid')
-plt.rcParams['font.family'] = 'DejaVu Sans'
-plt.figure(figsize=(16,8))
-plt.title('Data provided by each user', fontsize=20)
-sns.countplot(x='subject',hue='Activity_name', data = train)
+plt.figure(figsize=(7,7))
+sns.boxplot(x='Activity_name', y='201 tBodyAccMagmean',data=train, showfliers=False, saturation=1)
+plt.ylabel('Acceleration Magnitude mean')
+plt.axhline(y=-0.7, xmin=0.1, xmax=1.0,dashes=(5,5), c='g')
+plt.axhline(y=-0.05, xmin=0.4, xmax = 1.0,dashes=(5,5), c='m')
+plt.xticks(rotation=90)
 plt.show()
 ```
-![count_plot]
+![count_plot] https://github.com/kuljeet98/Human-Activity-Recognition-Using-Smartphones-Data-Set/blob/master/boxplot.png
 
