@@ -56,10 +56,10 @@ tsne(X_data = X_tsne,y_data=y_tsne, perplexities =[5,10,20,50])
 #### Accuracy
 In case of the classical Machine Learning Algortihms the Linear SVM Acuracy on test set was at the top most.
 ```
-Linear Regression - Accuracy on test set 0.9623345775364778
+Linear Regression - Accuracy on test set: 0.9623345775364778
 Linear SVM        - Accuracy on test set: 0.9670851713607058
-Kernal SVM        - Accuracy on test set:  0.9626739056667798
-Random Forest     - Accuracy on the test set:  0.9250084832032576
+Kernal SVM        - Accuracy on test set: 0.9626739056667798
+Random Forest     - Accuracy on test set: 0.9250084832032576
 ```
 Accuracy is measured after some hyperparameter tunning on these algorithms.
 
