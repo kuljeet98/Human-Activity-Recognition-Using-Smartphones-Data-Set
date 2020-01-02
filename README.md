@@ -1,5 +1,6 @@
 ## HAR using Classical Machine Learning models and LSTM models.
-### Dataset Link :https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones<br>
+### Dataset Link:
+https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones<br>
 #### Models used in Human Activity Recognition:
 ```
 (1) LSTM Model
@@ -31,5 +32,14 @@ from keras.layers.core import Dense, Dropout
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, TensorBoard
 
 ```
-####
+#### Plotting data
+```
+sns.set_style('whitegrid')
+plt.rcParams['font.family'] = 'DejaVu Sans'
+plt.figure(figsize=(16,8))
+plt.title('Data provided by each user', fontsize=20)
+sns.countplot(x='subject',hue='Activity_name', data = train)
+plt.show()
+```
+![count_plot]
 
