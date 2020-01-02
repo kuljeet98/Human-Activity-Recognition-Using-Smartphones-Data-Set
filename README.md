@@ -64,7 +64,8 @@ Random Forest     - Accuracy on the test set:  0.9250084832032576
 Accuracy is measured after some hyperparameter tunning on these algorithms.
 
 ##### LSTM
-```The hidden units used are 64, 32.
+```
+The hidden units used are 64, 32.
 # Initiliazing the sequential model
 model = Sequential()
 # Configuring the parameters
@@ -87,7 +88,8 @@ early_stopping = EarlyStopping( monitor='val_loss',patience=10,verbose=1,restore
 callbacks_list = [checkpoint, reduce_on_plateau, tensorboard_callback, early_stopping ]
 ```
 ##### Tensorboard Visualisation
-![acc](acc.png)![loss](loss.png)
+![acc](acc.png)
+![loss](loss.png)
 
 #### Model accuracy on 64 hidden layers
 ```
