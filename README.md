@@ -88,7 +88,7 @@ early_stopping = EarlyStopping( monitor='val_loss',patience=10,verbose=1,restore
 callbacks_list = [checkpoint, reduce_on_plateau, tensorboard_callback, early_stopping ]
 ```
 ##### Tensorboard Visualisation
-![acc](acc.png)<br>
+![acc](acc.png)
 ![loss](loss.png)
 
 #### Model accuracy on 64 hidden layers
