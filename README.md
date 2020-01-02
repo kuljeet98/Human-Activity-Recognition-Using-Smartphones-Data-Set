@@ -53,7 +53,7 @@ y_tsne = train['Activity_name']
 tsne(X_data = X_tsne,y_data=y_tsne, perplexities =[5,10,20,50])
 ```
 ![tnse](tnse.png)
-
+#### Accuracy
 In case of the classical Machine Learning Algortihms the Linear SVM Acuracy on test set was at the top most.
 ```
 Linear Regression - Accuracy on test set 0.9623345775364778
@@ -88,7 +88,7 @@ early_stopping = EarlyStopping( monitor='val_loss',patience=10,verbose=1,restore
 callbacks_list = [checkpoint, reduce_on_plateau, tensorboard_callback, early_stopping ]
 ```
 ##### Tensorboard Visualisation
-![acc](acc.png)
+![acc](acc.png)<br>
 ![loss](loss.png)
 
 #### Model accuracy on 64 hidden layers
