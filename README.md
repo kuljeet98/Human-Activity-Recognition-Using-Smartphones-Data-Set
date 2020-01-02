@@ -42,5 +42,5 @@ plt.axhline(y=-0.05, xmin=0.4, xmax = 1.0,dashes=(5,5), c='m')
 plt.xticks(rotation=90)
 plt.show()
 ```
-![count_plot] https://github.com/kuljeet98/Human-Activity-Recognition-Using-Smartphones-Data-Set/blob/master/boxplot.png
+![count_plot](boxplot.png)
 
